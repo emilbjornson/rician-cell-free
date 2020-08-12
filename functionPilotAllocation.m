@@ -1,8 +1,9 @@
 function [ Pset] = functionPilotAllocation( R,HMean,A_MMSE,K,M,p,tau_p)
 
 %Pilot allocation function
-%The pilots of first tau_p UEs are allocated randomly. The rest of UEs sequentially pick
-%their pilots that give least interference to UEs in the current pilot set.
+%The pilots of first tau_p UEs are allocated randomly. The rest of UEs
+%sequentially pick their pilots that give least interference to UEs in the
+%current pilot set.
 
 %Pilot set initialize
 Pset=1:tau_p;

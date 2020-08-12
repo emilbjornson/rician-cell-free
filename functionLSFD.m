@@ -25,12 +25,12 @@ function [ a_MMSE,a_LMMSE,a_LS] = functionLSFD( R,HMean,M,K,p,tau_p,Pset)
 %                   
 %                     
 %a_LMMSE               = Matrix with dimension M x M x K where (:,:,k) 
-%                       is the LSFD coefficient of UE k when LMMSE estimor
-%                       is applied.
+%                       is the LSFD coefficient of UE k when LMMSE
+%                       estimator is applied.
 %                      
 %a_LS                   = Matrix with dimension M x M x K where (:,:,k) 
-%                       is the LSFD coefficient of UE k when LMMSE estimor
-%                       is applied.
+%                       is the LSFD coefficient of UE k when LMMSE
+%                       estimator is applied.
 
 
 
@@ -57,7 +57,7 @@ end
 %Go through all UEs
 for k = 1:K
     
-    %Compute the matrix that is inverted in the MMSE&LMMSE estimators
+    %Compute the matrix that is inverted in the MMSE &L MMSE estimators
     inds=Pset(:,k);
     PsiInv=zeros(M,M);
     PsiInv_LMMSE=zeros(M,M);
