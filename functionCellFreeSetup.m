@@ -95,7 +95,7 @@ distanceUE=zeros(K,K);
  covMatrixUE=2.^(-distanceUE/decorr);
  %Creating shadow fading realizations
  shadowFadingAP=sqrtm(covMatrixAP)*randn(M,1); 
- shadowFadingUE=sqrt(covMatrixUE)*randn(K,1);
+ shadowFadingUE=sqrtm(covMatrixUE)*randn(K,1);
  %Shadow fading parameter
  delta=0.5;
  %Create the resulting shadow fading matrix
